@@ -1,0 +1,494 @@
+@media (max-width: 1330px) {
+  // Generel
+  // Header
+  .top-screen-persone {
+    margin-right: 0;
+  }
+  // Middle
+  .aboutUs-picture-item-text {
+    line-height: 20px;
+  }
+  .aboutUs-picture-item-num {
+    font-size: rem(28px);
+    margin-right: 12px;
+  }
+  .aboutUs-picture-item-star__top {
+    left: -37px;
+  }
+  .aboutUs-picture-left {
+    left: -50px;
+  }
+  .aboutUs-picture-bottom-num {
+    font-size: rem(28px);
+    margin-right: 12px;
+  }
+  .aboutUs-picture-bottom-text {
+    line-height: 20px;
+  }
+
+  // Footer
+}
+
+@media (max-width: 1170px) {
+  // Generel
+  // Header
+  .top-screen-persone-stars__right {
+    right: -11px;
+  }
+  .top-screen-persone {
+    top: -34px;
+  }
+  // Middle
+  .aboutUs-picture-bottom {
+    bottom: 18px;
+    left: 192px;
+  }
+  .aboutUs-picture-left {
+    top: 173px;
+  }
+  .aboutUs-picture-top {
+    right: 0px;
+    top: 275px;
+  }
+  .top-screen-solve-text {
+    margin-bottom: 30px;
+  }
+  // Footer
+}
+
+@media (max-width: 992px) {
+  // Generel
+  // Header
+  .grid {
+    grid-template-areas:
+      "text"
+      "teen"
+      "btns";
+    grid-template-columns: 1fr;
+  }
+  .top-screen-btn {
+    margin-bottom: 45px;
+  }
+  .top-screen-persone {
+    top: 0;
+    margin-left: 0;
+    top: -55px;
+    &-img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .top-screen-persone-stars__left {
+    left: 143px;
+  }
+  .top-screen-persone-stars__top {
+    right: 280px;
+  }
+  .top-screen-persone-stars__right {
+    right: 64px;
+  }
+  // Middle
+  .aboutus-order {
+    order: 2;
+  }
+
+  .aboutUs-group {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .aboutUs-picture-img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .aboutUs-picture {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .participate {
+    margin-bottom: 125px;
+  }
+  .top-screen-btns {
+    max-width: 100%;
+  }
+  // Footer
+}
+@media (max-width: 868px) {
+  .top-screen-persone-stars__left {
+    left: 102px;
+  }
+  .top-screen-persone-stars__top {
+    right: 212px;
+  }
+  .top-screen-persone-stars__right {
+    right: 55px;
+  }
+  .bg-header-bg-item1 {
+    bottom: -215px;
+  }
+}
+@media (max-width: 768px) {
+  // Generel
+  .order {
+    order: 2;
+  }
+  // Header
+  .top-screen-persone-stars__left {
+    left: -12px;
+  }
+  .top-screen-persone-stars__top {
+    right: 35px;
+  }
+  .top-screen-persone-stars__right {
+    right: -11px;
+  }
+
+  .bg-header-bg-item3 {
+    display: none;
+  }
+  .bg-header-bg-item5 {
+    display: none;
+  }
+  .bg-header-bg {
+    border-bottom-right-radius: 100% 10%;
+    border-bottom-left-radius: 100% 10%;
+  }
+  // Middle
+  .steps-item-img {
+    margin-bottom: 0px;
+  }
+  .participate-header-title {
+    font-size: rem(46px);
+  }
+  // Footer
+}
+@media (max-width: 655px) {
+  // Generel
+  // Header
+  // Middle
+  .question-num {
+    flex-direction: column;
+    margin-bottom: 35px;
+    &-text {
+      margin-bottom: 10px;
+    }
+  }
+  .aboutUs-picture-item {
+    &-num {
+      font-size: rem(25px);
+    }
+    &-text {
+      font-size: rem(14px);
+    }
+  }
+  .aboutUs-picture-bottom-num {
+    font-size: rem(25px);
+  }
+  .bg-header-bg-item1 {
+    bottom: -115px;
+    animation: none;
+  }
+  .bg-header-bg-item2 {
+    top: -86px;
+    animation: none;
+  }
+  .bg-header-bg-item3 {
+    display: none;
+  }
+  .bg-header-bg-item4 {
+    animation: none;
+  }
+  .bg-header-bg-item5 {
+    display: none;
+  }
+
+  // Footer
+}
+
+@media (max-width: 576px) {
+  // Generel
+  // Header
+  .top-screen-solve-title {
+    font-size: rem(45px);
+  }
+  .top-screen-btn-resume {
+    margin-bottom: 15px;
+  }
+  // Middle
+  .aboutUs {
+    margin-bottom: 0;
+  }
+  .popup-lab {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .aboutUs-picture-top {
+    top: 166px;
+  }
+  .aboutUs-picture-item-star__top {
+    top: -53px;
+    left: -36px;
+  }
+  .aboutUs-picture-item-star__left {
+    top: -50px;
+    right: -236px;
+  }
+  .aboutUs-picture-bottom {
+    bottom: 70px;
+  }
+  .aboutUs-picture-item-star__bottom {
+    top: -58px;
+    right: 50px;
+  }
+  .aboutUs-picture-item {
+    padding: 10px;
+    max-width: 195px;
+  }
+  .aboutUs-picture-left {
+    left: -6px;
+  }
+
+  .participate-title-h1 {
+    font-size: rem(40px);
+  }
+  .participate-header-title {
+    font-size: rem(42px);
+  }
+  // Footer
+  .footer-info {
+    margin-bottom: 40px;
+  }
+  .footer-links {
+    margin-bottom: 20px;
+  }
+  .col-footer-links {
+    text-align: left;
+  }
+  .footer-links-icon {
+    margin-left: 0;
+    margin-right: 19px;
+  }
+
+  .header {
+    margin-bottom: 50px;
+  }
+
+  .aboutUs-picture-item {
+    position: initial;
+    // min-height: calc(100% - 10px);
+    margin: 0 auto;
+    padding: 20px 17px;
+    max-width: 285px;
+    margin-bottom: 28px;
+  }
+
+  .question-num-dots-count {
+    width: 31px;
+    margin-left: 5px;
+  }
+
+  .aboutUs-group-btn {
+    padding: 0px 24px;
+  }
+}
+@media (max-width: 476px) {
+  .top-screen-solve-title {
+    font-size: rem(36px);
+  }
+  .participate-header-title {
+    font-size: rem(36px);
+    line-height: 50px;
+  }
+  .aboutUs-group {
+    margin-bottom: 0;
+  }
+  span.error-choose {
+    font-size: rem(13px);
+  }
+}
+@media (max-width: 400px) {
+  // Generel
+  .sup {
+    font-size: rem(22px);
+    right: -14px;
+  }
+  .container {
+    max-width: 1210px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  // Header
+
+  .header-social-item {
+    margin-left: 5px;
+  }
+  .top-screen-solve-title {
+    padding-right: 0;
+    font-size: rem(32px);
+  }
+
+  .top-screen-persone-teen {
+    width: 443px;
+  }
+  .confirmation {
+    padding: 20px;
+  }
+  .tcs {
+    padding: 30px 10px 43px 10px;
+  }
+  .confirmation-btn-tcs {
+    margin-bottom: 15px;
+  }
+  .header-social {
+    text-align: right;
+  }
+  .bg-header {
+    margin-bottom: 50px;
+  }
+  .header {
+    margin-bottom: 50px;
+    padding: 17px 0px;
+    padding-top: 35px;
+    &-logo {
+      display: block;
+      // top: -5px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .top-screen-persone-stars__left {
+    height: 62px;
+    width: 62px;
+  }
+  .top-screen-persone-stars__top {
+    height: 62px;
+    width: 62px;
+  }
+  .top-screen-persone-stars__right {
+    height: 62px;
+    width: 62px;
+    right: 17px;
+  }
+
+  .header-logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .participate-title-h1 {
+    font-size: rem(36px);
+    line-height: 50px;
+  }
+  .aboutUs-group-text-title {
+    font-size: rem(36px);
+  }
+
+  // Middle
+  .question-label {
+    margin-bottom: 10px;
+  }
+  .popup-lab {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .participate {
+    margin-bottom: 80px;
+  }
+
+  .aboutUs-picture-item-star__left {
+    right: -237px;
+  }
+  .aboutUs-picture-bottom {
+    left: 27px;
+  }
+
+  .header-social-item {
+    height: 0;
+    position: relative;
+    top: 4px;
+    img {
+      width: 40px;
+    }
+  }
+
+  .aboutUs-group-btn {
+    padding: 0px 11px;
+    font-size: rem(16px);
+  }
+  .tcs-container-content-list {
+    max-height: calc(100vh - 76px);
+  }
+
+  .question-num-dots-count {
+    width: 26px;
+    margin-left: 3px;
+  }
+  .top-screen-btn-resume {
+    font-size: rem(16px);
+  }
+  .top-screen-btn-solve {
+    font-size: rem(16px);
+  }
+  .ui-btn-icon {
+    top: 7px;
+  }
+  .steps-btn {
+    font-size: rem(16px);
+  }
+  .top-screen {
+    margin-bottom: 45px;
+  }
+  .top-screen-solve-text {
+    font-size: rem(20px);
+  }
+
+  .popup-choose-field {
+    margin-bottom: 30px;
+  }
+
+  // Footer
+}
+
+@media (max-width: 350px) {
+  .top-screen-persone-stars__left {
+    left: -21px;
+  }
+  .top-screen-persone-stars__top {
+    right: 18px;
+  }
+  .top-screen-persone-stars__right {
+    right: 56px;
+    top: 270px;
+  }
+  .aboutUs-group-btn {
+    font-size: rem(16px);
+  }
+
+  .aboutUs-picture-bottom-text {
+    font-size: rem(12px);
+  }
+  .aboutUs-picture-item {
+    min-width: 177px;
+  }
+  .top-screen-btn-solve:hover:after {
+    right: 5px;
+  }
+  .participate-header-title {
+    font-size: rem(43px);
+    line-height: 53px;
+  }
+
+  .aboutUs-group-btn {
+    padding: 0px 7px;
+    font-size: rem(14px);
+  }
+  .aboutUs-picture-item-star__left {
+    right: -205px;
+  }
+  .header-social-item img {
+    width: 33px;
+  }
+}
