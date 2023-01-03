@@ -154,20 +154,31 @@ body {
         color:rgba(255, 255, 255, 1);
       }
 
-      &-yellow{
+      &:hover {
         background: #FFAB08;
         color: rgba(255, 255, 255, 1);
+       transition: 0.3s ease;
       }
 
-      &-orangedark{
-        background: #F86310;
-        color: rgba(255, 255, 255, 1);
-      }
-
-      &-white{
+      &:active {
         background: #F9F9F9;
         color: rgba(172, 172, 172, 1);
       }
+
+      // &-yellow{
+      //   background: #FFAB08;
+      //   color: rgba(255, 255, 255, 1);
+      // }
+
+      // &-orangedark{
+      //   background: #F86310;
+      //   color: rgba(255, 255, 255, 1);
+      // }
+
+      // &-white{
+      //   background: #F9F9F9;
+      //   color: rgba(172, 172, 172, 1);
+      // }
 
       &-whitedark{
         background: #F2F2F3;
@@ -197,19 +208,24 @@ body {
       background: #FFFFFF;
       border-radius: 50px;
 
+
       img {
         margin-right: 8px;
       }
 
-      &-orange{
+      &:hover{
         border: 1px solid #F86310;
+        transition: 0.3s ease;
+
       }
-      &-yellow{
+      &:active{
         background: #FFAB08;
+        border: 1px solid #FFAB08;
       }
     }
   }
   &-social {
+    cursor: pointer;
     border: 1px dashed #9747FF;
     border-radius: 5px;
     padding: 20px;
@@ -233,8 +249,13 @@ body {
       border-radius: 12px;
       padding: 12px;
 
-      &-yellow{
+      &:hover {
         border: 1px solid #FFAB08;
+      }
+
+      &:active {
+       color: rgba(0, 0, 0, 1);
+       font-size: 12px;
       }
     }
   }
