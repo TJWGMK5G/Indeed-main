@@ -268,22 +268,76 @@ textarea {
 }
 
 .ui-btn {
+  cursor: pointer;
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 36px;
-  line-height: 36px;
-  background: black;
+  max-width: 268px;
+  height: 40px;
+  line-height: 40px;
+  background: #ff7020;
   font-weight: 400;
   font-size: 16px;
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 12px;
   white-space: nowrap;
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+}
+
+.ui-btn:hover {
+  background: #FFAB08;
+  color: white;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ui-btn:active {
+  background: #F9F9F9;
+  color: #acacac;
+}
+
+.ui-btn-add {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 268px;
+  height: 40px;
+  line-height: 40px;
+  background: #f2f2f3;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.ui-btn-add:hover {
+  background: #FFAB08;
+  border-radius: 12px;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.ui-btn-add:active {
+  background: #F2F2F3;
+  border-radius: 12px;
+  color: #acacac;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .ui-btn-icon {
@@ -301,13 +355,25 @@ textarea {
 .ui-input {
   width: 100%;
   display: block;
-  height: 50px;
-  border-radius: 10px;
-  border: 1.6px solid #ebecf5;
-  padding-left: 64px;
-  padding-right: 10px;
+  max-width: 294px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #F2F2F3;
+  border-radius: 12px;
+  padding: 12px;
   font-size: 12px;
   color: black;
+}
+
+.ui-input:hover {
+  background: #FFFFFF;
+  border: 1px solid #FFAB08;
+  border-radius: 12px;
+}
+
+.ui-input:active {
+  color: black;
+  font-size: 12px;
 }
 
 .ui-label {
@@ -1180,42 +1246,16 @@ body {
   padding: 20px;
   border: 1px dashed #9747FF;
   border-radius: 5px;
+  max-width: 308px;
 }
 
 .main-btn-item {
-  cursor: pointer;
   margin-bottom: 20px;
-  width: 268px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 12px;
-  color: #FFFFFF;
 }
 
 .main-btn-item-orange {
   background: #FF7020;
   color: white;
-}
-
-.main-btn-item:hover {
-  background: #FFAB08;
-  color: white;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.main-btn-item:active {
-  background: #F9F9F9;
-  color: #acacac;
 }
 
 .main-btn-item-whitedark {
@@ -1291,21 +1331,6 @@ body {
 
 .main-form-item {
   margin-bottom: 20px;
-  width: 294px;
-  height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #F2F2F3;
-  border-radius: 12px;
-  padding: 12px;
-}
-
-.main-form-item:hover {
-  border: 1px solid #FFAB08;
-}
-
-.main-form-item:active {
-  color: black;
-  font-size: 12px;
 }
 
 @media (max-width: 1330px) {
