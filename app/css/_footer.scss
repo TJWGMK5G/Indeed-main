@@ -1,65 +1,105 @@
-$ffLexend: "Lexend", sans-serif;
-$colorBlack: #20233e;
-$colorSilver: #8b8d9b;
-$colorOrange: #eba544;
-$colorBlue: #3c50e0;
-
-// Mixin
-$html-font-size: 16px;
-@function stripUnit($value) {
-  @return $value / ($value * 0 + 1);
-}
-@function rem($pxValue) {
-  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+footer {
+  padding-top: 52px;
+  padding-bottom: 40px;
 }
 
-.footer {
-  padding-top: 69px;
-  padding-bottom: 50px;
-  background-image: url(../images/bg/footer-bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  &-info {
-    max-width: 350px;
-    & li {
-      margin-bottom: 9px;
-    }
-    & li a {
-      color: #ffffff;
-      font-size: rem(14px);
-      border-bottom: 1px solid #ffffff;
 
-      &:hover {
-        border-bottom: 1px solid #ffffff00;
-      }
+.footer-main {
+
+  &-item {
+
+    &-logo {
+      margin-bottom: 50px;
     }
-  }
-  &-logo {
-    margin-bottom: 25px;
-  }
-  &-links {
-    margin-bottom: 91px;
-    &-icon {
-      display: inline-block;
-      margin-left: 19px;
-      height: 32px;
-      transition: 0.3s ease;
-      &:hover {
-        transform: scale(1.1);
-      }
-      img {
-        max-height: 32px;
-        width: 32px;
-      }
+
+    &-span {
+      font-size: 12px;
+    }
+
+    &-text {
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 24px;
+    }
+
+    &-numb {
+      line-height: 130%;
+    }
+
+    &-numb span {
+      margin-left: 4px;
+    }
+
+    &-social img:first-child {
+      margin-right: 16px;
     }
   }
-  &-copyright {
-    color: #ffffff;
-    font-size: rem(14px);
-  }
+
 }
 
-.col-footer-links {
-  text-align: right;
-}
+
+// $ffLexend: "Lexend", sans-serif;
+// $colorBlack: #20233e;
+// $colorSilver: #8b8d9b;
+// $colorOrange: #eba544;
+// $colorBlue: #3c50e0;
+
+// // Mixin
+// $html-font-size: 16px;
+// @function stripUnit($value) {
+//   @return $value / ($value * 0 + 1);
+// }
+// @function rem($pxValue) {
+//   @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+// }
+
+// .footer {
+//   padding-top: 69px;
+//   padding-bottom: 50px;
+//   background-image: url(../images/bg/footer-bg.svg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center top;
+//   &-info {
+//     max-width: 350px;
+//     & li {
+//       margin-bottom: 9px;
+//     }
+//     & li a {
+//       color: #ffffff;
+//       font-size: rem(14px);
+//       border-bottom: 1px solid #ffffff;
+
+//       &:hover {
+//         border-bottom: 1px solid #ffffff00;
+//       }
+//     }
+//   }
+//   &-logo {
+//     margin-bottom: 25px;
+//   }
+//   &-links {
+//     margin-bottom: 91px;
+//     &-icon {
+//       display: inline-block;
+//       margin-left: 19px;
+//       height: 32px;
+//       transition: 0.3s ease;
+//       &:hover {
+//         transform: scale(1.1);
+//       }
+//       img {
+//         max-height: 32px;
+//         width: 32px;
+//       }
+//     }
+//   }
+//   &-copyright {
+//     color: #ffffff;
+//     font-size: rem(14px);
+//   }
+// }
+
+// .col-footer-links {
+//   text-align: right;
+// }
