@@ -620,8 +620,13 @@ footer {
   line-height: 130%;
 }
 
-.footer-main-item-numb span {
+.footer-main-item-numb a {
   margin-left: 4px;
+  color: #000;
+}
+
+.footer-main-item-social img {
+  cursor: pointer;
 }
 
 .footer-main-item-social img:first-child {

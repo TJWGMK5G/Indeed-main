@@ -26,8 +26,13 @@ footer {
       line-height: 130%;
     }
 
-    &-numb span {
+    &-numb a {
       margin-left: 4px;
+      color: #000;
+    }
+
+    &-social img {
+      cursor: pointer;
     }
 
     &-social img:first-child {
