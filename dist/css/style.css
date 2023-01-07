@@ -617,8 +617,9 @@ footer {
   margin-bottom: 24px;
 }
 
-.footer-main-item-numb {
-  line-height: 130%;
+.footer-main-item-numb img {
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .footer-main-item-numb a {

@@ -22,8 +22,9 @@ footer {
       margin-bottom: 24px;
     }
 
-    &-numb {
-      line-height: 130%;
+    &-numb img{
+      display: inline-block;
+      vertical-align: bottom;
     }
 
     &-numb a {
