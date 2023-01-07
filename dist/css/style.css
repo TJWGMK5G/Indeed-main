@@ -531,21 +531,15 @@ header {
 }
 
 .header-bg {
-  position: absolute;
-  z-index: 2;
-  background: url(../images/header/bg.png);
+  background: #FFAB08;
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  height: 466px;
   width: 100%;
-}
-
-.header-main {
-  position: relative;
-  z-index: 5;
   padding-top: 24px;
-  margin-bottom: 180px;
+  padding-bottom: 62px;
+  -webkit-clip-path: ellipse(60% 100% at 50% 0%);
+  clip-path: ellipse(60% 100% at 50% 0%);
 }
 
 .header-main-title {
@@ -557,13 +551,20 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 0 auto;
-  max-width: 784px;
+  max-width: 748px;
   width: 100%;
 }
 
 .header-main-group-burger {
-  padding-right: 20px;
+  max-width: 250px;
+}
+
+.header-main-group-text {
+  padding-top: 20px;
 }
 
 .header-main-group-title {
@@ -1094,6 +1095,13 @@ body {
   }
 }
 
+@media (max-width: 1024.99px) {
+  .header-bg {
+    -webkit-clip-path: ellipse(80% 100% at 50% 0%);
+    clip-path: ellipse(80% 100% at 50% 0%);
+  }
+}
+
 @media (max-width: 992px) {
   .col-md-1 {
     -ms-flex: 0 0 8.33333%;
@@ -1388,6 +1396,33 @@ body {
   }
 }
 
+@media (max-width: 768.99px) {
+  .header-main-title {
+    margin-bottom: 20px;
+  }
+
+  .header-main-group {
+    max-width: 540px;
+  }
+
+  .header-main-group-burger {
+    max-width: 180px;
+  }
+
+  .header-main-group-burger {
+    margin: 0 auto;
+  }
+
+  .header-main-group-title {
+    font-size: 36px;
+    margin-bottom: 26px;
+  }
+
+  .header-main-group-delivery {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 655px) {
   .question-num {
     -webkit-box-orient: vertical;
@@ -1617,6 +1652,32 @@ body {
 
   .aboutUs-group-btn {
     padding: 0px 24px;
+  }
+}
+
+@media (max-width: 576.99px) {
+  .header-bg {
+    padding-bottom: 30px;
+    -webkit-clip-path: ellipse(95% 100% at 50% 0%);
+    clip-path: ellipse(95% 100% at 50% 0%);
+  }
+
+  .header-main-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .header-main-group-text {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .header-main-group-title {
+    font-size: 30px;
+    margin-bottom: 16px;
   }
 }
 
