@@ -1,6 +1,10 @@
 footer {
-  padding-top: 52px;
+  padding-top: 70px;
   padding-bottom: 40px;
+
+  @media(max-width:768.99px){
+    padding-top: 50px;
+  }
 }
 
 
