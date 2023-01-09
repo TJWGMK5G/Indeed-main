@@ -73,3 +73,27 @@ document.querySelector('.tabs__nav-btn').click();
 
 
 
+// TEST
+// const testBtn = document.querySelectorAll('.main-content-button-test')
+// const testTitle = document.querySelector('.main-content-title')
+// const testText = 'Какой же я молодец!';
+
+
+// testBtn.forEach(function(e) {
+//   e.addEventListener('click' , function(){
+//     testTitle.innerHTML = e.innerHTML;
+//     // e.innerHTML = testTitle.innerText;
+//     console.log(testTitle);
+//   })
+// })
+//
+
+// TAB-CHANGES
+const tabBtn = document.querySelectorAll('.main-category-item')
+const tabTitle = document.querySelector('.main-content-title')
+
+tabBtn.forEach(function(e){
+  e.addEventListener('click' , function(){
+    tabTitle.innerHTML = e.innerText;
+  })
+})
