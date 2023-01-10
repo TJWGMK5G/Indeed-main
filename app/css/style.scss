@@ -70,6 +70,8 @@ body {
   flex: 0 0 auto;
 }
 
+
+
 .main-content-cart input:disabled{
   border: 1px solid #F2F2F3;
 }
@@ -116,6 +118,12 @@ body {
     }
   }
   &-content {
+    margin-bottom: 70px;
+
+    @media(max-width: 768px) {
+      margin-bottom: 50px;
+    }
+
     &-title{
       margin-bottom: 25px;
       font-weight: 600;
