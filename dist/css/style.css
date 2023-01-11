@@ -594,6 +594,7 @@ header {
 footer {
   padding-top: 51px;
   padding-bottom: 40px;
+  background: #FFFFFF;
 }
 
 .footer-main-item-logo {
@@ -663,7 +664,7 @@ body {
   font-weight: 400;
   font-size: 1rem;
   color: #000000;
-  background-color: #ffffff;
+  background: #F9F9F9;
 }
 
 #wrapper {
