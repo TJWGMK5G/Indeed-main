@@ -203,8 +203,10 @@ body {
       &-name {
         margin-bottom: 30px;
         overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+	      text-overflow: ellipsis;
+	      display: -webkit-box;
+	      -webkit-line-clamp: 2;
+	      -webkit-box-orient: vertical;
 
         @media(max-width:768.99px) {
           font-size: 12px;
