@@ -78,6 +78,7 @@ header {
     }
 
     &-title {
+      max-width: 437px;
       font-weight: 800;
       font-size: 50px;
       line-height: 120%;
@@ -87,11 +88,12 @@ header {
       @media(max-width:768.99px){
         font-size: 36px;
         margin-bottom: 26px;
+        max-width: 325px;
       }
 
       @media(max-width:576.99px){
         font-size: 30px;
-        margin-bottom: 16px;
+        margin: 0 auto 16px;
       }
     }
 

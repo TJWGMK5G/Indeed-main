@@ -568,6 +568,7 @@ header {
 }
 
 .header-main-group-title {
+  max-width: 437px;
   font-weight: 800;
   font-size: 50px;
   line-height: 120%;
@@ -718,6 +719,7 @@ body {
   gap: 24px;
   margin-bottom: 50px;
   overflow-x: scroll;
+  margin-right: -15px;
 }
 
 .main-list::-webkit-scrollbar {
@@ -780,6 +782,7 @@ body {
 }
 
 .main-content-items-picture img {
+  display: block;
   width: 100%;
 }
 
@@ -793,6 +796,10 @@ body {
 
 .main-content-items-name {
   margin-bottom: 30px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .main-content-items-weight {
@@ -1586,6 +1593,7 @@ body {
   .header-main-group-title {
     font-size: 36px;
     margin-bottom: 26px;
+    max-width: 325px;
   }
 
   .header-main-group-delivery {
@@ -1894,7 +1902,7 @@ body {
 
   .header-main-group-title {
     font-size: 30px;
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
   }
 
   .footer-main-item-logo {
