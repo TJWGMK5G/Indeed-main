@@ -73,20 +73,6 @@ document.querySelector('.tabs__nav-btn').click();
 
 
 
-// TEST
-// const testBtn = document.querySelectorAll('.main-content-button-test')
-// const testTitle = document.querySelector('.main-content-title')
-// const testText = 'Какой же я молодец!';
-
-
-// testBtn.forEach(function(e) {
-//   e.addEventListener('click' , function(){
-//     testTitle.innerHTML = e.innerHTML;
-//     // e.innerHTML = testTitle.innerText;
-//     console.log(testTitle);
-//   })
-// })
-//
 
 // TAB-CHANGES
 const tabBtn = document.querySelectorAll('.main-category-item')
@@ -96,4 +82,152 @@ tabBtn.forEach(function(e){
   e.addEventListener('click' , function(){
     tabTitle.innerHTML = e.innerText;
   })
+})
+
+// BTN(+, -) - СCOUNTER
+
+// let btnMinus = document.querySelector('.main-content-wrap-btnminus')
+// let btnPlus = document.querySelector('.main-content-wrap-btnplus')
+// let btnSumm = document.querySelector('.main-content-wrap-btnsumm')
+let itemFoods = document.querySelectorAll('.main-content-wrap')
+let btnResult = document.querySelector('.main-content-cart-input')
+
+
+itemFoods.forEach(function(item) {
+ let btnPlus = item.querySelector('.main-content-wrap-btnplus');
+ let btnMinus = item.querySelector('.main-content-wrap-btnminus');
+ let btnSumm = item.querySelector('.main-content-wrap-btnsumm')
+ let number = 1;
+
+
+
+ btnPlus.addEventListener('click', function() {
+  if (number < 100) {
+    number++
+  }
+  btnSumm.innerHTML = number;
+  btnResult.innerHTML === number.summ;
+ })
+ btnMinus.addEventListener('click', function() {
+  if (number > 1) {
+    number--
+  }
+  if (number <= 0) {
+    delete itemFoods;
+  }
+  btnSumm.innerHTML = number;
+
+ })
+
+})
+
+
+// POPUP
+const popupLinks = document.querySelectorAll('.popup-link');
+const body = document.querySelector('body');
+const lockPadding = document.querySelectorAll('.lock-padding')
+
+let unlock = true;
+
+const timeout = 800;
+
+if (popupLinks.length > 0) {
+  for (let index = 0; index < popupLinks.length; index++){
+    const popupLink = popupLinks[index];
+    popupLink.addEventListener('click', function (e) {
+      const popupName = popupLink.getAttribute('href').replace('#', '');
+      const currentPopup = document.getElementById(popupName);
+      popupOpen(currentPopup);
+      e.preventDefault();
+    });
+  }
+}
+
+const popupCloseIcon = document.querySelectorAll('.close-popup');
+if (popupCloseIcon.length > 0) {
+  for (let index = 0; index < popupCloseIcon.length; index++) {
+    const el = popupCloseIcon[index];
+    el.addEventListener('click', function(e) {
+      popupClose(el.closest('.popup'));
+      e.preventDefault();
+    });
+  }
+}
+
+function popupOpen(currentPopup) {
+  if (currentPopup && unlock) {
+    const popupActive = document.querySelector('.popup.open');
+    if (popupActive) {
+      popupClose(popupActive, false);
+    } else {
+      bodyLock();
+    }
+    currentPopup.classList.add('open');
+    currentPopup.addEventListener('click', function (e) {
+      if (!e.target.closest('.popup'));
+    })
+  }
+}
+function popupClose(popupActive, doUnlock = true) {
+  if (unlock) {
+    popupActive.classList.remove('open');
+    if (doUnlock) {
+      bodyUnlock();
+    }
+  }
+}
+
+function bodyLock() {
+  const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+
+  if (lockPadding.length > 0) {
+    for (let index = 0; index < lockPadding.length; index++) {
+      const el = lockPadding[index];
+      el.style.paddingRight = lockPaddingValue;
+    }
+  }
+  body.style.paddingRight = lockPaddingValue;
+  body.classList.add('lock');
+
+  unlock = false;
+  setTimeout(function () {
+    unlock = true;
+  }, timeout);
+}
+
+function bodyUnlock() {
+  setTimeout(function () {
+    if (lockPadding.length > 0) {
+    for (let index = 0; index < lockPadding.length; index++) {
+      const el = lockPadding[index];
+      el.style.paddingRight = '0px';
+    }
+  }
+    body.style.paddingRight = '0px';
+    body.classList.remove('lock');
+  }, timeout);
+
+  unlock = false;
+  setTimeout(function () {
+    unlock = true;
+  }, timeout);
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 27) {
+    const popupActive = document.querySelector('.popup.open');
+    popupClose(popupActive);
+  }
+});
+
+
+// Change radio btn POPUP-FORM
+
+document.querySelector('.radio-1-hidden').addEventListener('click', function() {
+    document.querySelector('.popup-form-container').classList.add('hidden');
+    document.querySelector('.popup-form-input-hidden').classList.add('hidden');
+    if (document.querySelector('.radio-2-default').target) {
+    document.querySelector('.popup-form-container').classList.remove('hidden');
+    document.querySelector('.popup-form-input-hidden').classList.remove('hidden');
+    }
 })

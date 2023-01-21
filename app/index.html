@@ -43,8 +43,11 @@
      </ul>
      <div class="main-content">
       <div class="row flex-column768">
-      <div class="col-3 col-xs-12">
-            <div class="main-content-cart"><span>Корзина</span><input type="text" disabled value="0"></div>
+      <div class="col-3 col-lg-4 col-xs-12">
+            <div class="main-content-cart">
+               <span>Корзина</span>
+               <div class="main-content-cart-input">0</div>
+            </div>
             <div class="main-content-wrap">
                <div class="main-content-wrap-order">
                   <img src="./images/items/photo.png" alt="alt">
@@ -55,9 +58,9 @@
                   </div>
                </div>
                <div class="main-content-wrap-counter">
-                  <button><span>-</span></button>
-                  <input type="text" value="1" disabled>
-                  <button><span>+</span></button>
+                  <button class="main-content-wrap-btnminus"><span>-</span></button>
+                  <!-- <input class="main-content-wrap-btnsumm" type="text" value="1" disabled> --> <div class="main-content-wrap-btnsumm">1</div>
+                  <button class="main-content-wrap-btnplus"><span>+</span></button>
                </div>
             </div>
             <div class="main-content-wrap">
@@ -70,9 +73,9 @@
                   </div>
                </div>
                <div class="main-content-wrap-counter">
-                  <button><span>-</span></button>
-                  <input type="text" value="4" disabled>
-                  <button><span>+</span></button>
+                  <button class="main-content-wrap-btnminus"><span>-</span></button>
+                  <!-- <input class="main-content-wrap-btnsumm" type="text" value="0" disabled> --> <div class="main-content-wrap-btnsumm">1</div>
+                  <button class="main-content-wrap-btnplus"><span>+</span></button>
                </div>
             </div>
             <div class="main-content-wrap">
@@ -85,21 +88,21 @@
                   </div>
                </div>
                <div class="main-content-wrap-counter">
-                  <button><span>-</span></button>
-                  <input type="text" value="2" disabled>
-                  <button><span>+</span></button>
+                  <button class="main-content-wrap-btnminus"><span>-</span></button>
+                  <!-- <input class="main-content-wrap-btnsumm" type="text" value="0" disabled> --> <div class="main-content-wrap-btnsumm">1</div>
+                  <button class="main-content-wrap-btnplus"><span>+</span></button>
                </div>
             </div>
             <div class="main-content-summ">
                <div class="main-content-summ-text">Итого</div>
                <div class="main-content-summ-price">1279₽</div>
             </div>
-            <div class="main-content-btn"></div>
+            <div class="main-content-btn ui-btn">Оформить заказ</div>
             <div class="main-content-delivery"><img src="./images/social-new/free-icon-delivery-2362252.svg" alt="alt">
                <span>Бесплатная доставка</span>
             </div>
       </div>
-          <div class="col-9 col-sm-12 tabs__content">
+          <div class="col-9 col-lg-8 col-sm-12 tabs__content">
             <div class="main-content-title">
                Бургеры
             </div>
@@ -118,7 +121,7 @@
                      <div class="main-content-items-price">689₽</div>
                      <div class="main-content-items-name">Мясная бомба</div>
                      <div class="main-content-items-weight">520г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add popup-link">Добавить</a>
                   </div>
                </div>
                <div class="col-4 col-md-6 col-sm-3 col-xs-6">
@@ -127,7 +130,7 @@
                      <div class="main-content-items-price">550₽</div>
                      <div class="main-content-items-name">Супер сырный</div>
                      <div class="main-content-items-weight">512г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add popup-link">Добавить</a>
 
                   </div>
                </div>
@@ -137,7 +140,7 @@
                      <div class="main-content-items-price">639₽</div>
                      <div class="main-content-items-name">Сытный</div>
                      <div class="main-content-items-weight">580г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add popup-link">Добавить</a>
 
                   </div>
                </div>
@@ -147,7 +150,7 @@
                      <div class="main-content-items-price">480₽</div>
                      <div class="main-content-items-name">Тяжелый удар</div>
                      <div class="main-content-items-weight">470г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add">Добавить</a>
                   </div>
                </div>
                <div class="col-4 col-md-6 col-sm-3 col-xs-6">
@@ -156,7 +159,7 @@
                      <div class="main-content-items-price">450₽</div>
                      <div class="main-content-items-name">Вечная классика</div>
                      <div class="main-content-items-weight">450г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add">Добавить</a>
                   </div>
                </div>
                <div class="col-4 col-md-6 col-sm-3 col-xs-6">
@@ -165,7 +168,7 @@
                      <div class="main-content-items-price">560₽</div>
                      <div class="main-content-items-name">Итальянский</div>
                      <div class="main-content-items-weight">510г</div>
-                     <div class="main-content-items-add ui-btn-add">Добавить</div>
+                     <a href="#popup" class="main-content-items-add ui-btn-add">Добавить</a>
                   </div>
                </div>
             </div>
@@ -302,6 +305,81 @@
              </div>
                </div>
           </div>
+      </div>
+
+     </div>
+     <div id="popup" class="popup">
+      <div class="popup-body">
+         <div class="popup-content">
+            <a href="#" class="popup-content-close close-popup"><img src="./images/close.svg" alt="alt"></a>
+            <div class="popup-content-title">Мясная бомба</div>
+            <div class="popup-content-main">
+               <div  class="popup-content-main-picture"><img src="./images/items/photo (1).png" alt="alt"></div>
+               <div class="popup-content-main-text">
+                  <div class="popup-content-main-info">Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</div>
+                  <div class="popup-content-main-composition">
+                     <span>Состав:</span>
+                     <div class="popup-content-main-list">
+                        <li>Пшеничная булочка</li>
+                        <li>Котлета из говядины</li>
+                        <li>Красный лук</li>
+                        <li>Листья салата</li>
+                        <li>Соус горчичный</li>
+                     </div>
+                  </div>
+                  <div class="popup-content-main-amount">520г, ккал 430</div>
+               </div>
+            </div>
+            <div class="popup-content-undermain">
+               <div class="popup-content-undermain-btn ui-btn"> Добавить</div>
+               <div class="popup-content-undermain-group">
+                  <div class="popup-content-undermain-counter main-content-wrap-counter">
+                     <button class=" main-content-wrap-btnminus"><span>-</span></button>
+                     <!-- <input class="main-content-wrap-btnsumm" type="text" value="1" disabled> --> <div class="main-content-wrap-btnsumm">1</div>
+                     <button class="main-content-wrap-btnplus"><span>+</span></button>
+                  </div>
+                  <div class="popup-content-undermain-price">689₽</div>
+               </div>
+            </div>
+         </div>
+      </div>
+     </div>
+     <div id="popup-delivery" class="popup-delivery">
+      <div class="popup-body popup-body-default">
+         <div class="popup-content">
+            <div class="row">
+               <div class="col-6 none768px pr-0">
+                  <div class="popup-group"><img src="./images/icon-new/bg-form.png" alt="alt"></div>
+               </div>
+               <div class="col-6 col-sm-12  pl-0">
+                  <div class="popup-form">
+                     <a href="#" class="popup-form-close close-popup"><img src="./images/close.svg" alt="alt"></a>
+                     <form class="popup-form-wrap" action="#">
+                        <div class="popup-form-title">Доставка</div>
+                        <input placeholder="Ваше имя" type="text" class="popup-form-input ui-input">
+                        <input placeholder="Телефон" type="text" class="popup-form-input ui-input">
+                        <div class="popup-form-radio">
+                           <div class="popup-form-radio-item">
+                              <input id="radio-1" type="radio" name="radio" value="1" >
+                              <label class="radio-1-hidden" for="radio-1">Самовывоз</label>
+                           </div>
+                           <div class="popup-form-radio-item">
+                              <input id="radio-2" type="radio" name="radio" value="2" checked>
+                              <label class="radio-2-default" for="radio-2">Доставка</label>
+                           </div>
+                        </div>
+                        <input placeholder="Улица, дом, квартира" type="text" class="popup-form-input popup-form-input-hidden ui-input">
+                        <div class="popup-form-container">
+                           <input placeholder="Этаж" type="text" class="popup-form-container-input ui-input">
+                           <input placeholder="Домофон" type="text" class="popup-form-container-input ui-input">
+                        </div>
+                        <a href="#" class="popup-form-button ui-btn">Оформить</a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+
+         </div>
       </div>
      </div>
    </div>
