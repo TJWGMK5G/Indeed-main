@@ -108,6 +108,7 @@ itemFoods.forEach(function(item) {
   btnSumm.innerHTML = number;
   btnResult.innerHTML === number.summ;
  })
+
  btnMinus.addEventListener('click', function() {
   if (number > 1) {
     number--
@@ -116,8 +117,9 @@ itemFoods.forEach(function(item) {
     delete itemFoods;
   }
   btnSumm.innerHTML = number;
-
  })
+
+ btnResult.innerHTML = btnSumm
 
 })
 
